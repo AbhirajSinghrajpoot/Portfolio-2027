@@ -2,7 +2,8 @@ import React from 'react'
 import { AiFinanceChapter } from './AiFinanceChapter'
 import { NextHireChapter } from './NextHireChapter'
 import { GetMeAChaiChapter } from './GetMeAChaiChapter'
-import { CyberRakshakChapter } from './CyberRakshakChapter'
+import { IntelliThreatChapter } from './IntelliThreatChapter'
+import { EditkaroChapter } from './EditkaroChapter'
 
 export const FeaturedProjects: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ export const FeaturedProjects: React.FC = () => {
           </h2>
         </div>
         <p className="font-mono text-xs text-[#9da0a8] max-w-md leading-relaxed">
-          Four projects spanning AI-powered finance, career intelligence, creator platforms, and cybersecurity.
+          Five projects spanning AI-powered finance, career intelligence, creator platforms, malware detection, and a video editing agency.
         </p>
       </div>
 
@@ -36,8 +37,11 @@ export const FeaturedProjects: React.FC = () => {
         <div id="project-get-me-a-chai" className="featured-project-card scroll-mt-24">
           <GetMeAChaiChapter />
         </div>
-        <div id="project-cyberrakshak" className="featured-project-card scroll-mt-24">
-          <CyberRakshakChapter />
+        <div id="project-intellithreat" className="featured-project-card scroll-mt-24">
+          <IntelliThreatChapter />
+        </div>
+        <div id="project-editkaro" className="featured-project-card scroll-mt-24">
+          <EditkaroChapter />
         </div>
       </div>
     </section>

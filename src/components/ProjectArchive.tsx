@@ -88,7 +88,8 @@ export const ProjectArchive: React.FC = () => {
           return (
             <div
               key={item.id}
-              className="archive-card p-4 sm:p-6 rounded-2xl border border-white/[0.08] bg-[#111215]/60 hover:border-[#e65c24]/40 hover:bg-[#141519] transition-all duration-200 flex flex-col justify-between space-y-4 group"
+              id={`project-${item.id}`}
+              className="archive-card scroll-mt-24 p-4 sm:p-6 rounded-2xl border border-white/[0.08] bg-[#111215]/60 hover:border-[#e65c24]/40 hover:bg-[#141519] transition-all duration-200 flex flex-col justify-between space-y-4 group"
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between font-mono text-xs">

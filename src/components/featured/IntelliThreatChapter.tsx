@@ -2,24 +2,23 @@ import React from 'react'
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react'
 import { FEATURED_PROJECTS } from '../../data/portfolioData'
 
-export const CyberRakshakChapter: React.FC = () => {
+export const IntelliThreatChapter: React.FC = () => {
   const project = FEATURED_PROJECTS[3]
 
   const keyFeatures = [
-    "Scam message detection & analysis",
-    "Phishing link identification",
-    "AI-generated risk explanation",
-    "Threat indicators & warning labels",
-    "Actionable safety guidance",
-    "Powered by Google Gemini API"
+    "Dataset-based file feature analysis",
+    "Random Forest classification model",
+    "Predicts Malware / Safe classification",
+    "Flask-based web interface for results",
+    "No actual malware execution required"
   ]
 
   return (
-    <article id="project-cyberrakshak" className="py-20 border-b border-white/[0.08] relative">
+    <article id="project-intellithreat" className="py-20 border-b border-white/[0.08] relative">
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>
-          <span>// AI-POWERED SCAM DETECTOR</span>
+          <span>// ML-BASED MALWARE DETECTION</span>
         </span>
         <span className="text-[#e65c24] font-semibold">{project.year}</span>
       </div>

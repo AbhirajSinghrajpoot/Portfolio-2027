@@ -121,8 +121,8 @@ export const FEATURED_PROJECTS: Project[] = [
     subtitle: 'Malware Detection · Academic Project',
     year: '2025',
     liveUrl: 'https://ai-based-malware-detector-o03w.onrender.com/',
-    technologies: ['Python', 'Machine Learning', 'Random Forest', 'Flask'],
-    summary: 'An academic cybersecurity project that analyzes file-based dataset features and predicts whether a file is malware or safe, without executing actual malware.',
+    technologies: ['Python', 'Machine Learning', 'Random Forest'],
+    summary: 'Academic cybersecurity project that analyzes file-based dataset features and predicts whether a file is malware or safe, without executing actual malware.',
     highlights: [
       'Dataset-based file feature analysis',
       'Random Forest classification model',
@@ -140,12 +140,13 @@ export const FEATURED_PROJECTS: Project[] = [
     year: '2025',
     liveUrl: 'https://editing-agency-beryl.vercel.app/index.html',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    summary: 'A responsive video editing agency website with categorized portfolio showcases, video previews, and a modern user-friendly interface.',
+    summary: 'Responsive video editing agency website with categorized portfolio showcases, video previews, and a modern user-friendly interface.',
     highlights: [
       'Categorized video portfolio with previews',
-      'Modern UI with smooth animations',
-      'Fully responsive cross-device design',
-      'Agency contact and service showcase'
+      'Modern UI with smooth hover animations',
+      'Fully responsive across all devices',
+      'Agency services and package showcase',
+      'Contact & inquiry section'
     ],
     category: 'web',
   }
@@ -153,6 +154,7 @@ export const FEATURED_PROJECTS: Project[] = [
 
 
 export const ARCHIVE_PROJECTS: ArchiveProject[] = [
+  { id: 'cyberrakshak', title: 'CyberRakshak', subtitle: 'Scam Detector AI', year: '2026', technologies: ['React', 'TypeScript', 'Vite', 'Google Gemini API'], description: 'AI-powered cybersecurity application that analyzes scam messages, phishing attempts, and suspicious links using Google Gemini API for risk explanation and safety guidance.' },
   { id: 'mysql-journey', title: 'MySQL Technical Log', subtitle: 'Backend / Database', year: '2024', technologies: ['MySQL', 'SQL', 'Relational Databases'], description: 'A 15-day technical log documenting my journey mastering MySQL, relational databases, and complex backend querying.' },
   { id: 'tic-tac-toe', title: 'Tic Tac Toe', subtitle: 'Classic Game', year: '2024', technologies: ['HTML', 'CSS', 'JavaScript'], description: 'Interactive browser-based two-player game.' },
   { id: 'stone-paper-scissors', title: 'Stone Paper Scissors', subtitle: 'Mini Game', year: '2024', technologies: ['HTML', 'CSS', 'JavaScript'], description: 'Interactive browser-based game with computer-generated moves.' },
@@ -162,11 +164,8 @@ export const ARCHIVE_PROJECTS: ArchiveProject[] = [
   { id: 'port-scanner', title: 'Network Port Scanner', subtitle: 'Security Tool', year: '2025', technologies: ['Python', 'Tkinter', 'Socket', 'Threading'], description: 'GUI-based network reconnaissance tool for scanning ports and identifying open services.' },
   { id: 'saas-app', title: 'Full Stack SaaS Application', subtitle: 'Web Service', year: '2026', technologies: ['GitHub Repo Missing'], description: 'Full-stack application with authentication, payments and web-based functionality.' },
   { id: 'dev-portfolio', title: 'Personal Developer Portfolio', subtitle: 'Web Portfolio', year: '2025', technologies: ['React', 'CSS'], description: 'Personal portfolio showcasing projects, skills and development work.' },
-  { id: 'intellithreat', title: 'IntelliThreat', subtitle: 'Malware Detection · Academic Project', year: '2025', liveUrl: 'https://ai-based-malware-detector-o03w.onrender.com/', technologies: ['Python', 'Machine Learning', 'Random Forest'], description: 'Academic cybersecurity project that analyzes file-based dataset features and predicts whether a file is malware or safe, without executing actual malware.' },
   { id: 'orbitbank', title: 'OrbitBank', subtitle: 'FinTech Landing Page', year: '2025', liveUrl: 'https://orbit-bank.vercel.app/', technologies: ['React.js', 'Tailwind CSS', 'Vite', 'Google Apps Script'], description: 'Modern FinTech landing page featuring responsive design, a cryptocurrency ticker, pricing plans, testimonials, and a Google Sheets integrated contact form.' },
-  { id: 'editkaro', title: 'Editkaro Agency', subtitle: 'Video Editing Agency Portfolio', year: '2025', liveUrl: 'https://editing-agency-beryl.vercel.app/index.html', technologies: ['HTML', 'CSS', 'JavaScript'], description: 'Responsive video editing agency website with categorized portfolio showcases, video previews, and a modern user-friendly interface.' },
-  { id: 'wizards-portfolio', title: "Wizard's Portfolio", subtitle: 'Personal Portfolio v1', year: '2025', liveUrl: 'https://wizards-portfolio.vercel.app/', githubUrl: 'https://github.com/AbhirajSinghrajpoot/Wizards-Portfolio', technologies: ['HTML', 'CSS', 'JavaScript', 'Typed.js'], description: 'First personal developer portfolio showcasing projects, skills, and contact. Features animated typing effect, smooth scrolling, and a Google Sheets integrated contact form.' },
-  { id: 'cyberrakshak', title: 'CyberRakshak', subtitle: 'Scam Detector AI', year: '2026', technologies: ['React', 'TypeScript', 'Vite', 'Google Gemini API'], description: 'AI-powered cybersecurity application that analyzes scam messages, phishing attempts, and suspicious links using Google Gemini API for risk explanation and safety guidance.' }
+  { id: 'wizards-portfolio', title: "Wizard's Portfolio", subtitle: 'Personal Portfolio v1', year: '2025', liveUrl: 'https://wizards-portfolio.vercel.app/', githubUrl: 'https://github.com/AbhirajSinghrajpoot/Wizards-Portfolio', technologies: ['HTML', 'CSS', 'JavaScript', 'Typed.js'], description: 'First personal developer portfolio showcasing projects, skills, and contact. Features animated typing effect, smooth scrolling, and a Google Sheets integrated contact form.' }
 ]
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
@@ -207,78 +206,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   }
 ]
 
-export const EVOLUTION_TIMELINE = [
-  {
-    period: '2025',
-    phase: 'WEB DEVELOPMENT FOUNDATIONS',
-    description: 'Practical web development tasks, responsive frontend implementation, and full-stack API building.',
-    milestones: [
-      {
-        title: 'Full-Stack Web Development Intern',
-        date: 'Nov 2025 — Dec 2025',
-        tech: 'CodSoft InfoTech',
-        summary: 'React, Node.js, MongoDB, JWT authentication, REST APIs, Debugging, and Performance improvements.',
-        highlight: 'Built robust MERN stack applications with secure authentication.'
-      },
-      {
-        title: 'Web Development Intern',
-        date: '2025',
-        tech: 'VaultofCodes',
-        summary: 'Worked on practical web-development tasks and responsive frontend implementation.',
-        highlight: 'Responsive design using HTML, CSS, and JavaScript.'
-      }
-    ],
-  },
-  {
-    period: '2025-2026',
-    phase: 'AI & CYBERSECURITY START',
-    description: 'Transitioning into AI learning modules, cloud-based practice, and ethical hacking.',
-    milestones: [
-      {
-        title: 'Ethical Hacking Intern',
-        date: 'Nov 2025 — Jan 2026',
-        tech: 'iStudio',
-        summary: 'Kali Linux, Reconnaissance, Security testing, Wireshark, Nmap, Burp Suite, and OWASP ZAP.',
-        highlight: 'Security testing and reconnaissance using Kali Linux tools.'
-      },
-      {
-        title: 'AI & Digital Skills Intern',
-        date: 'Nov 2025 — Dec 2025',
-        tech: 'AICTE × IBM SkillsBuild',
-        summary: 'AI learning modules, Cloud-based technical practice, and Professional skill sessions.',
-        highlight: 'Comprehensive training in AI and cloud technical practice.'
-      }
-    ],
-  },
-  {
-    period: '2026',
-    phase: 'ADVANCED SECURITY & SYSTEMS',
-    description: 'Focused on cybersecurity awareness, enterprise workflows, and network security fundamentals.',
-    milestones: [
-      {
-        title: 'Cybersecurity Intern',
-        date: 'Mar 2026 — Apr 2026',
-        tech: 'AICTE & VOIS for Tech University',
-        summary: 'Focused on Cyber threats, Safe digital practices, Cybersecurity awareness, and Security fundamentals.',
-        highlight: 'Cybersecurity awareness and fundamentals.'
-      },
-      {
-        title: 'Network Security Associate Virtual Intern',
-        date: 'Apr 2026 — Jun 2026',
-        tech: 'AICTE / EduSkills — Fortinet',
-        summary: '8-week virtual internship on Network security fundamentals and networking concepts.',
-        highlight: 'Mastered core networking and network security concepts.'
-      },
-      {
-        title: 'ServiceNow System Administrator',
-        date: '2026',
-        tech: 'ServiceNow University / SmartBridge',
-        summary: 'ServiceNow administration, Workflows, Reports, Automated Test Framework fundamentals.',
-        highlight: 'CSA exam preparation and enterprise workflow automation.'
-      }
-    ],
-  }
-]
+
 
 export const CERTIFICATIONS: Certification[] = [
   { title: 'Fortinet Certified Associate in Cybersecurity', issuer: 'Fortinet', type: 'certification', isFeatured: true },

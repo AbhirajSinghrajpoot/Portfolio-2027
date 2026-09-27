@@ -34,12 +34,13 @@ export const SkillsMatrix: React.FC = () => {
   }
 
   const categoryIcons: Record<string, React.ReactNode> = {
-    LANGUAGES: <Code2 className="w-4 h-4 text-[#e65c24]" />,
-    'CORE COMPUTER SCIENCE': <Cpu className="w-4 h-4 text-[#e65c24]" />,
+    PROGRAMMING: <Code2 className="w-4 h-4 text-[#e65c24]" />,
+    FRONTEND: <Layers className="w-4 h-4 text-[#e65c24]" />,
+    BACKEND: <Cpu className="w-4 h-4 text-[#e65c24]" />,
+    DATABASES: <Database className="w-4 h-4 text-[#e65c24]" />,
     'AI & MACHINE LEARNING': <Sparkles className="w-4 h-4 text-[#e65c24]" />,
-    'DATA & ANALYTICS': <Database className="w-4 h-4 text-[#e65c24]" />,
-    'WEB DEVELOPMENT': <Layers className="w-4 h-4 text-[#e65c24]" />,
-    'ENGINEERING TOOLS': <Terminal className="w-4 h-4 text-[#e65c24]" />,
+    CYBERSECURITY: <Terminal className="w-4 h-4 text-[#e65c24]" />,
+    'TOOLS & CLOUD': <Terminal className="w-4 h-4 text-[#e65c24]" />,
   }
 
   const displayedCategories =

@@ -89,32 +89,32 @@ export function App() {
 
       {/* Continuous Immersive Storyline */}
       <main>
-        {/* 01 // Hero Stage */}
+        {/* Hero Stage */}
         <Hero />
 
-        {/* 02 // Editorial Philosophy & Academic Grounding */}
+        {/* Editorial Philosophy & Academic Grounding */}
         <AboutStatement />
 
-        {/* 03 // Typographic Capability Matrix */}
+        {/* Typographic Capability Matrix */}
         <SkillsMatrix />
 
-        {/* 05 // Selected Systems Exhibition (AI Finance, NextHire, Get Me A Chai, CyberRakshak) */}
+        {/* Selected Systems Exhibition */}
         <FeaturedProjects />
 
-        {/* 06 // Secondary Verified Projects Archive */}
+        {/* Secondary Verified Projects Archive */}
         <ProjectArchive />
 
-        {/* 07 // University Education & Verified Certifications */}
+        {/* University Education & Verified Certifications */}
         <EducationCertifications />
 
-        {/* 08 // Live Coding Footprint, GitHub & LeetCode Console */}
+        {/* Live Coding Footprint, GitHub & LeetCode Console */}
         <TerminalFootprint />
 
-        {/* 09 // Conclusion & Direct Contact */}
+        {/* Conclusion & Direct Contact */}
         <ContactSection />
       </main>
 
-      {/* 10 // Refined Editorial Footer */}
+      {/* Refined Editorial Footer */}
       <Footer />
     </div>
   )

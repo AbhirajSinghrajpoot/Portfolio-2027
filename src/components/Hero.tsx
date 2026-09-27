@@ -3,14 +3,12 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowDown, Code2, Terminal } from 'lucide-react'
 import { PERSONAL_INFO } from '../data/portfolioData'
-import Typed from 'typed.js'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export const Hero: React.FC = () => {
   const heroRef = useRef<HTMLElement>(null)
   const nameWrapperRef = useRef<HTMLDivElement>(null)
-  const typedNameRef = useRef<HTMLSpanElement>(null)
   const photoWrapperRef = useRef<HTMLDivElement>(null)
   const photoImgRef = useRef<HTMLImageElement>(null)
   const statementRef = useRef<HTMLDivElement>(null)
@@ -20,15 +18,6 @@ export const Hero: React.FC = () => {
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReducedMotion) return
-
-    // Typed.js Initialization
-    const typed = new Typed(typedNameRef.current, {
-      strings: ["Abhiraj Singh Rajpoot"],
-      typeSpeed: 100,
-      backSpeed: 80,
-      loop: true,
-      showCursor: false
-    })
 
     const ctx = gsap.context(() => {
       // Controlled, elegant typographic & photographic composition timeline
@@ -117,7 +106,6 @@ export const Hero: React.FC = () => {
 
     return () => {
       ctx.revert()
-      typed.destroy()
     }
   }, [])
 
@@ -149,7 +137,7 @@ export const Hero: React.FC = () => {
       >
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           <span className="inline-block w-2 h-2 rounded-full bg-[#e65c24]" />
-          <span className="text-[#f4f3ef] font-medium tracking-wider">PORTFOLIO / 2026</span>
+          <span className="text-[#f4f3ef] font-medium tracking-wider">PORTFOLIO</span>
           <span className="text-[#5e6068]">·</span>
           <span className="text-[#9da0a8]">B.TECH — IOT, CYBERSECURITY & BLOCKCHAIN ({PERSONAL_INFO.graduationYear})</span>
         </div>
@@ -165,23 +153,13 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center overflow-visible">
           {/* Left Column: Interactive Typographic Name & Core Identity */}
           <div ref={nameWrapperRef} className="lg:col-span-7 xl:col-span-8 flex flex-col overflow-visible">
-            <div className="overflow-visible flex flex-wrap items-baseline gap-x-4 md:gap-x-8 gap-y-2">
+            <div className="overflow-visible flex flex-wrap gap-x-4 md:gap-x-8 gap-y-2">
               <h1
-                className="font-display font-extrabold tracking-tight leading-[0.95] text-[#f4f3ef] uppercase overflow-hidden"
+                className="font-display font-black text-[clamp(2.5rem,5vw,3.5rem)] sm:text-[clamp(3rem,6vw,4.5rem)] md:text-[clamp(3.5rem,7vw,5rem)] leading-[0.95] tracking-tighter text-[#f4f3ef] uppercase"
                 data-cursor="TEXT"
               >
-                <span
-                  className="inline-flex items-baseline will-change-transform overflow-hidden"
-                  style={{ minHeight: '3.5rem' }}
-                >
-                  <span
-                    ref={typedNameRef}
-                    className="font-display font-extrabold text-[clamp(1.5rem,4.5vw,2.8rem)] sm:text-[clamp(1.8rem,4vw,3rem)] md:text-[clamp(2rem,4vw,3.2rem)] lg:text-[clamp(2.2rem,4vw,3.5rem)] text-[#f4f3ef] tracking-tight leading-none transition-colors duration-200"
-                  />
-                  <span className="text-[#e65c24] ml-1 select-none font-display font-extrabold text-[clamp(1.5rem,4.5vw,2.8rem)] sm:text-[clamp(1.8rem,4vw,3rem)] md:text-[clamp(2rem,4vw,3.2rem)] lg:text-[clamp(2.2rem,4vw,3.5rem)] leading-none">
-                    .
-                  </span>
-                </span>
+                ABHIRAJ SINGH RAJPOOT
+                <span className="text-[#e65c24] ml-2 select-none">.</span>
               </h1>
             </div>
 

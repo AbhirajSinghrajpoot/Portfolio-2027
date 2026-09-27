@@ -177,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
               </a>
             </div>
             <div className="text-[11px] text-[#5e6068] mt-2">
-              {PERSONAL_INFO.university} · B.Tech CSE (2028)
+              {PERSONAL_INFO.university} · B.Tech IoT, Cybersecurity & Blockchain (2027)
             </div>
           </div>
         </div>

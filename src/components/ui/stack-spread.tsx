@@ -80,13 +80,13 @@ export interface StackSpreadCard {
 
 // array order = stack order, back (z 2) -> front (z 9)
 export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
-  // top-left: Skills & Technologies (img08) — sm row 1 left -> #skills
+  // top-left: IntelliThreat
   {
     item: {
       src: IMG.skills,
-      alt: "Skills & Technologies",
-      label: "02 // IntelliThreat",
-      href: "#skills",
+      alt: "IntelliThreat",
+      label: "INTELLITHREAT",
+      href: "#project-intellithreat",
     },
     stackOffset: { x: -8, y: -10 },
     stackRotate: -18,
@@ -94,13 +94,13 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: -22, y: -38 },
     z: 2,
   },
-  // top-right: Engineering Journey & Evolution (img07) — sm row 1 right -> #journey
+  // top-right: OrbitBank
   {
     item: {
       src: IMG.journey,
-      alt: "Project Journey & Evolution",
-      label: "03 // HOW I GOT HERE",
-      href: "#journey",
+      alt: "OrbitBank",
+      label: "ORBITBANK",
+      href: "#project-orbitbank",
     },
     stackOffset: { x: 14, y: -10 },
     stackRotate: 20,
@@ -108,12 +108,12 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: 22, y: -38 },
     z: 3,
   },
-  // mid-left: LEDGR Financial AI Controller (img06) — sm row 2 left -> #project-ledgr
+  // mid-left: AI Finance Platform
   {
     item: {
       src: IMG.ledgr,
       alt: "AI Finance Platform",
-      label: "04 // AI FINANCE",
+      label: "AI FINANCE",
       href: "#project-ai-finance-platform",
     },
     stackOffset: { x: -16, y: 0 },
@@ -122,12 +122,12 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: -22, y: -18 },
     z: 4,
   },
-  // top-centre: ResoniX Social NLP (img05) — sm row 2 right -> #project-resonix
+  // top-centre: NextHire
   {
     item: {
       src: IMG.resonix,
-      alt: "AI Career Assistant",
-      label: "05 // NEXTHIRE",
+      alt: "NextHire",
+      label: "NEXTHIRE",
       href: "#project-nexthire",
     },
     stackOffset: { x: 1, y: -10 },
@@ -136,12 +136,12 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: 22, y: -18 },
     z: 5,
   },
-  // mid-right: Hotel Booking Cancellation ML (img04) — sm row 3 left -> #project-hotel
+  // mid-right: Get Me A Chai
   {
     item: {
       src: IMG.hotel,
-      alt: "Creator Support Platform",
-      label: "06 // GET ME A CHAI",
+      alt: "Get Me A Chai",
+      label: "GET ME A CHAI",
       href: "#project-get-me-a-chai",
     },
     stackOffset: { x: 18, y: 1 },
@@ -150,13 +150,13 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: -22, y: 20 },
     z: 6,
   },
-  // bottom-left: GroupDNA Chat Behavioral Analytics (img03) — sm row 3 right -> #project-groupdna
+  // bottom-left: Editkaro
   {
     item: {
       src: IMG.groupdna,
-      alt: "Scam Detector AI",
-      label: "07 // CYBERRAKSHAK",
-      href: "#project-cyberrakshak",
+      alt: "Editkaro Agency",
+      label: "EDITKARO",
+      href: "#project-editkaro",
     },
     stackOffset: { x: -6, y: 10 },
     stackRotate: 6,
@@ -164,12 +164,12 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: 22, y: 20 },
     z: 7,
   },
-  // bottom-centre: Academic Education & DSU Degree (img02) — sm row 4 left -> #education
+  // bottom-centre: Education
   {
     item: {
       src: IMG.education,
-      alt: "B.Tech — IoT, Cybersecurity & Blockchain",
-      label: "08 // EDUCATION",
+      alt: "Education",
+      label: "EDUCATION",
       href: "#education",
     },
     stackOffset: { x: 8, y: 7 },
@@ -178,12 +178,12 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     targetSm: { x: -22, y: 40 },
     z: 8,
   },
-  // bottom-right: Developer Workstation & Repositories (img01) — sm row 4 right -> #footprint
+  // bottom-right: Github Profile
   {
     item: {
       src: IMG.workstation,
-      alt: "GitHub, LeetCode & Developer Tools",
-      label: "09 // CODE & PROFILES",
+      alt: "GitHub & Code Profiles",
+      label: "CODE & PROFILES",
       href: "#footprint",
     },
     stackOffset: { x: 20, y: 12 },
