@@ -85,7 +85,7 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
     item: {
       src: IMG.skills,
       alt: "Skills & Technologies",
-      label: "02 // SKILLS & TECH",
+      label: "02 // IntelliThreat",
       href: "#skills",
     },
     stackOffset: { x: -8, y: -10 },
@@ -112,9 +112,9 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.ledgr,
-      alt: "LEDGR AI Finance Controller & Auditing",
-      label: "04 // LEDGR FINANCE APP",
-      href: "#project-ledgr",
+      alt: "AI Finance Platform",
+      label: "04 // AI FINANCE",
+      href: "#project-ai-finance-platform",
     },
     stackOffset: { x: -16, y: 0 },
     stackRotate: -4,
@@ -126,9 +126,9 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.resonix,
-      alt: "ResoniX Social Engagement & NLP Analytics",
-      label: "05 // RESONIX SOCIAL NLP",
-      href: "#project-resonix",
+      alt: "AI Career Assistant",
+      label: "05 // NEXTHIRE",
+      href: "#project-nexthire",
     },
     stackOffset: { x: 1, y: -10 },
     stackRotate: -2,
@@ -140,9 +140,9 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.hotel,
-      alt: "Hotel Cancellation Predictive ML Dashboard",
-      label: "06 // HOTEL PREDICTOR",
-      href: "#project-hotel",
+      alt: "Creator Support Platform",
+      label: "06 // GET ME A CHAI",
+      href: "#project-get-me-a-chai",
     },
     stackOffset: { x: 18, y: 1 },
     stackRotate: 6,
@@ -154,9 +154,9 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.groupdna,
-      alt: "GroupDNA Chat Behavioral Activity Heatmap",
-      label: "07 // GROUPDNA BEHAVIORAL",
-      href: "#project-groupdna",
+      alt: "Scam Detector AI",
+      label: "07 // CYBERRAKSHAK",
+      href: "#project-cyberrakshak",
     },
     stackOffset: { x: -6, y: 10 },
     stackRotate: 6,
@@ -168,7 +168,7 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.education,
-      alt: "Baderia Global Education",
+      alt: "B.Tech — IoT, Cybersecurity & Blockchain",
       label: "08 // EDUCATION",
       href: "#education",
     },
@@ -182,7 +182,7 @@ export const DEFAULT_THEME_CARDS: StackSpreadCard[] = [
   {
     item: {
       src: IMG.workstation,
-      alt: "Developer Tools & Setup",
+      alt: "GitHub, LeetCode & Developer Tools",
       label: "09 // CODE & PROFILES",
       href: "#footprint",
     },

@@ -2,26 +2,24 @@ import React from 'react'
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react'
 import { FEATURED_PROJECTS } from '../../data/portfolioData'
 
-export const LedgrChapter: React.FC = () => {
-  const project = FEATURED_PROJECTS[0]
+export const NextHireChapter: React.FC = () => {
+  const project = FEATURED_PROJECTS[1]
 
   const keyFeatures = [
-    "Expense and transaction tracking",
-    "Budget management and alerts",
-    "AI-powered receipt scanning",
-    "Automatic expense categorization",
-    "Monthly financial analytics",
-    "Secure user authentication",
-    "Email-based notifications",
-    "API protection and rate limiting"
+    "Resume analysis & parsing",
+    "AI-powered resume feedback",
+    "ATS-oriented resume evaluation",
+    "Resume quality scoring",
+    "Job & candidate matching",
+    "Career-focused recommendations"
   ]
 
   return (
-    <article id="project-ai-finance-platform" className="py-20 border-b border-white/[0.08] relative">
+    <article id="project-nexthire" className="py-20 border-b border-white/[0.08] relative">
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>
-          <span>// PERSONAL FINANCE & AI AUTOMATION</span>
+          <span>// AI CAREER ASSISTANT</span>
         </span>
         <span className="text-[#e65c24] font-semibold">{project.year}</span>
       </div>

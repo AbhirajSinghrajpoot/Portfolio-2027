@@ -2,26 +2,24 @@ import React from 'react'
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react'
 import { FEATURED_PROJECTS } from '../../data/portfolioData'
 
-export const LedgrChapter: React.FC = () => {
-  const project = FEATURED_PROJECTS[0]
+export const CyberRakshakChapter: React.FC = () => {
+  const project = FEATURED_PROJECTS[3]
 
   const keyFeatures = [
-    "Expense and transaction tracking",
-    "Budget management and alerts",
-    "AI-powered receipt scanning",
-    "Automatic expense categorization",
-    "Monthly financial analytics",
-    "Secure user authentication",
-    "Email-based notifications",
-    "API protection and rate limiting"
+    "Scam message detection & analysis",
+    "Phishing link identification",
+    "AI-generated risk explanation",
+    "Threat indicators & warning labels",
+    "Actionable safety guidance",
+    "Powered by Google Gemini API"
   ]
 
   return (
-    <article id="project-ai-finance-platform" className="py-20 border-b border-white/[0.08] relative">
+    <article id="project-cyberrakshak" className="py-20 border-b border-white/[0.08] relative">
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>
-          <span>// PERSONAL FINANCE & AI AUTOMATION</span>
+          <span>// AI-POWERED SCAM DETECTOR</span>
         </span>
         <span className="text-[#e65c24] font-semibold">{project.year}</span>
       </div>

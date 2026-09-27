@@ -151,7 +151,7 @@ export const Hero: React.FC = () => {
           <span className="inline-block w-2 h-2 rounded-full bg-[#e65c24]" />
           <span className="text-[#f4f3ef] font-medium tracking-wider">PORTFOLIO / 2026</span>
           <span className="text-[#5e6068]">·</span>
-          <span className="text-[#9da0a8]">B.TECH CSE ({PERSONAL_INFO.graduationYear})</span>
+          <span className="text-[#9da0a8]">B.TECH — IOT, CYBERSECURITY & BLOCKCHAIN ({PERSONAL_INFO.graduationYear})</span>
         </div>
         <div className="flex items-center gap-4 sm:gap-6">
           <span className="hidden sm:inline text-[#5e6068]">
@@ -193,7 +193,7 @@ export const Hero: React.FC = () => {
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[#5e6068] pt-1 uppercase tracking-wider">
                 <span>SCROLL TO EXPLORE · THERE'S MORE TO SEE</span>
                 <span className="hidden sm:inline">·</span>
-                <span className="text-[#9da0a8]">JABALPUR, INDIA</span>
+                <span className="text-[#9da0a8]">JABALPUR, MP, INDIA</span>
               </div>
             </div>
           </div>
@@ -225,8 +225,8 @@ export const Hero: React.FC = () => {
                 <div className="relative aspect-[4/5] overflow-hidden bg-[#141517]">
                   <img
                     ref={photoImgRef}
-                    src="/images/abhiraj.png"
-                    alt="Abhiraj Singh Rajpoot in foggy landscape"
+                    src="/images/abhiraj1.png"
+                    alt="Abhiraj Singh Rajpoot"
                     className="w-full h-full object-cover object-center will-change-transform transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     loading="eager"
                     decoding="async"
@@ -239,7 +239,7 @@ export const Hero: React.FC = () => {
                 {/* Sub-frame Caption */}
                 <div className="flex items-center justify-between px-3 py-2 bg-[#0c0d0e]/95 border-t border-white/10 font-mono text-[10px] text-[#9da0a8]">
                   <span className="text-[#f4f3ef] font-medium">Abhiraj Singh Rajpoot</span>
-                  <span className="text-[#e65c24]">JABALPUR, INDIA</span>
+                  <span className="text-[#e65c24]">JABALPUR, MP, INDIA</span>
                 </div>
               </div>
             </div>

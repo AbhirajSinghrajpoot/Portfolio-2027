@@ -179,6 +179,18 @@ export const ProjectArchive: React.FC = () => {
                     <ArrowUpRight className="w-3 h-3" />
                   </a>
                 )}
+                {item.liveUrl && (
+                  <a
+                    href={item.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 font-mono text-xs text-[#e65c24] hover:text-white px-3 py-1.5 rounded bg-[#e65c24]/10 border border-[#e65c24]/40 hover:bg-[#e65c24] transition-colors shrink-0"
+                    data-cursor="LIVE"
+                  >
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                    <span>LIVE</span>
+                  </a>
+                )}
               </div>
             </div>
           )

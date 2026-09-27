@@ -6,20 +6,20 @@ export const GroupDnaChapter: React.FC = () => {
   const project = FEATURED_PROJECTS[3]
 
   const keyFeatures = [
-    "File scanning",
-    "Malware/safe classification",
-    "Machine-learning based detection",
-    "Random Forest model",
-    "Dashboard for detection results",
-    "No direct execution of the scanned file"
+    "Dataset-based file feature analysis",
+    "Random Forest classification model",
+    "Predicts Malware / Safe classification",
+    "Flask-based web interface for results",
+    "No actual malware execution required",
+    "Academic-grade cybersecurity research"
   ]
 
   return (
-    <article id="project-groupdna" className="py-20 border-b border-white/[0.08] relative">
+    <article id="project-intellithreat" className="py-20 border-b border-white/[0.08] relative">
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>
-          <span>// AI CYBERSECURITY</span>
+          <span>// ML-BASED MALWARE DETECTION</span>
         </span>
         <span className="text-[#e65c24] font-semibold">{project.year}</span>
       </div>

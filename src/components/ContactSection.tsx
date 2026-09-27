@@ -18,11 +18,11 @@ export const ContactSection: React.FC = () => {
   const faqs = [
     {
       q: 'What opportunities or roles are you actively looking for?',
-      a: "I'm actively seeking software engineering internships, AI/ML internships, and collaborative project opportunities. I'm currently pursuing my B.Tech in Computer Science (Expected graduation: 2028).",
+      a: "I'm currently seeking software engineering, AI/ML, and cybersecurity internship opportunities, along with collaborative projects. I'm pursuing a B.Tech in IoT, Cybersecurity & Blockchain, with graduation expected in 2027.",
     },
     {
       q: 'What is your location preference and availability?',
-      a: 'Based in Jabalpur, India (IST, UTC+5:30). Open to in-person roles in Jabalpur, remote opportunities, and flexible arrangements.',
+      a: 'Based in Jabalpur, MP, India (IST, UTC+5:30). Open to in-person roles in Jabalpur, remote opportunities, and flexible arrangements.',
     },
     {
       q: 'What are your primary technical strengths?',
@@ -115,7 +115,7 @@ export const ContactSection: React.FC = () => {
         </span>
         <div className="flex items-center gap-2">
           <Clock className="w-3.5 h-3.5 text-[#e65c24]" />
-          <span className="text-[#eceae5]">{bengaluruTime || 'JABALPUR, INDIA'}</span>
+          <span className="text-[#eceae5]">{bengaluruTime || 'JABALPUR, MP, INDIA'}</span>
         </div>
       </div>
 

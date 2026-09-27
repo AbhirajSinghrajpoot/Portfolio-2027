@@ -12,6 +12,7 @@ export const AboutStatement: React.FC = () => {
   const pillarsRef = useRef<HTMLDivElement>(null)
   const photoCardRef = useRef<HTMLDivElement>(null)
   const photoImgRef = useRef<HTMLImageElement>(null)
+  const photoImgForegroundRef = useRef<HTMLImageElement>(null)
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -37,7 +38,7 @@ export const AboutStatement: React.FC = () => {
         )
 
         gsap.fromTo(
-          photoImgRef.current,
+          [photoImgRef.current, photoImgForegroundRef.current],
           { scale: 1.08, yPercent: -4 },
           {
             scale: 1,
@@ -163,9 +164,9 @@ export const AboutStatement: React.FC = () => {
             <div className="absolute -bottom-1.5 -left-1.5 w-2.5 h-2.5 border-b border-l border-[#e65c24]/70 z-20" />
             <div className="absolute -bottom-1.5 -right-1.5 w-2.5 h-2.5 border-b border-r border-[#e65c24]/70 z-20" />
 
-            <div className="relative overflow-hidden border border-white/15 bg-[#141517] shadow-2xl transition-all duration-300 group-hover:border-white/25">
+            <div className="relative border border-white/15 bg-[#141517] shadow-2xl transition-all duration-300 group-hover:border-white/25">
               {/* Header */}
-              <div className="flex items-center justify-between px-3.5 py-1.5 bg-[#0c0d0e]/95 border-b border-white/10 font-mono text-[10px] text-[#9da0a8]">
+              <div className="relative z-20 flex items-center justify-between px-3.5 py-1.5 bg-[#0c0d0e]/95 border-b border-white/10 font-mono text-[10px] text-[#9da0a8]">
                 <span className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#e65c24]" />
                   <span className="text-[#f4f3ef] font-medium tracking-wider">FIG. 02</span>
@@ -174,21 +175,39 @@ export const AboutStatement: React.FC = () => {
               </div>
 
               {/* Wide Picture Frame with Parallax */}
-              <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-[#141517]">
-                <img
-                  ref={photoImgRef}
-                  src="/images/abhiraj.png"
-                  alt="Abhiraj Singh Rajpoot"
-                  className="w-full h-full object-cover object-center will-change-transform transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div className="relative aspect-[16/10] sm:aspect-[4/3]">
+                {/* Background Layer */}
+                <div className="absolute inset-0 overflow-hidden bg-[#141517]">
+                  <img
+                    ref={photoImgRef}
+                    src="/images/abhiraj2.png"
+                    alt="Abhiraj Singh Rajpoot"
+                    className="w-full h-[120%] object-cover object-top will-change-transform transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0c0d0e]/80 via-[#0c0d0e]/20 to-transparent pointer-events-none" />
+                </div>
 
-                <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0c0d0e]/80 via-[#0c0d0e]/20 to-transparent pointer-events-none" />
+                {/* Foreground Layer for Breakout */}
+                <div 
+                  className="absolute inset-0 pointer-events-none z-30"
+                  style={{ clipPath: 'inset(60% 0px -50px 0px)' }}
+                >
+                  <img
+                    ref={photoImgForegroundRef}
+                    src="/images/abhiraj2.png"
+                    alt=""
+                    className="w-full h-[120%] object-cover object-top will-change-transform transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    style={{ mixBlendMode: 'lighten' }}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
 
               {/* Caption */}
-              <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 py-2 bg-[#0c0d0e]/95 border-t border-white/10 font-mono text-[10px] text-[#9da0a8]">
+              <div className="relative z-20 flex flex-wrap items-center justify-between gap-2 px-3.5 py-2 bg-[#0c0d0e]/95 border-t border-white/10 font-mono text-[10px] text-[#9da0a8]">
                 <span className="text-[#eceae5]">Abhiraj Singh Rajpoot</span>
                 <span className="text-[#e65c24]">OUTDOORS</span>
               </div>
@@ -196,7 +215,7 @@ export const AboutStatement: React.FC = () => {
           </div>
 
           <p className="story-reveal-item font-sans text-xl sm:text-2xl text-[#f4f3ef] font-normal leading-relaxed">
-            I'm a Computer Science student who enjoys building things, solving problems, and learning by doing. I'm particularly interested in software development, data, machine learning, and generative AI.
+            I'm a B.Tech student — IoT, Cybersecurity & Blockchain who enjoys building things, solving problems, and learning by doing. I'm particularly interested in software development, data, machine learning, and generative AI.
           </p>
 
           <p className="story-reveal-item font-sans text-sm sm:text-base text-[#9da0a8] leading-relaxed">

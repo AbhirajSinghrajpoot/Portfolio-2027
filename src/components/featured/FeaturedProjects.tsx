@@ -1,8 +1,8 @@
 import React from 'react'
-import { LedgrChapter } from './LedgrChapter'
-import { ResonixChapter } from './ResonixChapter'
-import { HotelChapter } from './HotelChapter'
-import { GroupDnaChapter } from './GroupDnaChapter'
+import { AiFinanceChapter } from './AiFinanceChapter'
+import { NextHireChapter } from './NextHireChapter'
+import { GetMeAChaiChapter } from './GetMeAChaiChapter'
+import { CyberRakshakChapter } from './CyberRakshakChapter'
 
 export const FeaturedProjects: React.FC = () => {
   return (
@@ -21,26 +21,25 @@ export const FeaturedProjects: React.FC = () => {
           </h2>
         </div>
         <p className="font-mono text-xs text-[#9da0a8] max-w-md leading-relaxed">
-          Four projects spanning financial analytics, social media insights, predictive modeling, and chat behavior analysis.
+          Four projects spanning AI-powered finance, career intelligence, creator platforms, and cybersecurity.
         </p>
       </div>
 
       {/* Project Chapters */}
       <div className="space-y-6">
-        <div id="project-ledgr" className="featured-project-card scroll-mt-24">
-          <LedgrChapter />
+        <div id="project-ai-finance-platform" className="featured-project-card scroll-mt-24">
+          <AiFinanceChapter />
         </div>
-        <div id="project-resonix" className="featured-project-card scroll-mt-24">
-          <ResonixChapter />
+        <div id="project-nexthire" className="featured-project-card scroll-mt-24">
+          <NextHireChapter />
         </div>
-        <div id="project-hotel" className="featured-project-card scroll-mt-24">
-          <HotelChapter />
+        <div id="project-get-me-a-chai" className="featured-project-card scroll-mt-24">
+          <GetMeAChaiChapter />
         </div>
-        <div id="project-groupdna" className="featured-project-card scroll-mt-24">
-          <GroupDnaChapter />
+        <div id="project-cyberrakshak" className="featured-project-card scroll-mt-24">
+          <CyberRakshakChapter />
         </div>
       </div>
     </section>
   )
 }
-

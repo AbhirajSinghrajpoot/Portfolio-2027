@@ -98,7 +98,7 @@ export function App() {
         {/* 03 // Typographic Capability Matrix */}
         <SkillsMatrix />
 
-        {/* 05 // Selected Systems Exhibition (LEDGR, ResoniX, Hotel, GroupDNA) */}
+        {/* 05 // Selected Systems Exhibition (AI Finance, NextHire, Get Me A Chai, CyberRakshak) */}
         <FeaturedProjects />
 
         {/* 06 // Secondary Verified Projects Archive */}

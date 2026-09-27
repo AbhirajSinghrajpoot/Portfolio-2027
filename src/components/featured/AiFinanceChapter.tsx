@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react'
 import { FEATURED_PROJECTS } from '../../data/portfolioData'
 
-export const LedgrChapter: React.FC = () => {
+export const AiFinanceChapter: React.FC = () => {
   const project = FEATURED_PROJECTS[0]
 
   const keyFeatures = [
@@ -12,8 +12,8 @@ export const LedgrChapter: React.FC = () => {
     "Automatic expense categorization",
     "Monthly financial analytics",
     "Secure user authentication",
-    "Email-based notifications",
-    "API protection and rate limiting"
+    "Email-based notifications via Inngest",
+    "API protection and rate limiting via Arcjet"
   ]
 
   return (
@@ -21,7 +21,7 @@ export const LedgrChapter: React.FC = () => {
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>
-          <span>// PERSONAL FINANCE & AI AUTOMATION</span>
+          <span>// PERSONAL FINANCE &amp; AI AUTOMATION</span>
         </span>
         <span className="text-[#e65c24] font-semibold">{project.year}</span>
       </div>

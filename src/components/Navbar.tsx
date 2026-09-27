@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
 
         {/* Location & Status (Desktop only) */}
         <div className="hidden lg:flex items-center gap-4 text-xs font-mono text-[#5e6068]">
-          <span>JABALPUR, INDIA</span>
+          <span>JABALPUR, MP, INDIA</span>
           <span className="text-[#24262d]">/</span>
           <span className="text-emerald-400/90 flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />

@@ -6,18 +6,17 @@ export const HotelChapter: React.FC = () => {
   const project = FEATURED_PROJECTS[2]
 
   const keyFeatures = [
-    "Creator authentication",
-    "Creator profiles",
-    "Razorpay payment integration",
-    "Donation/support system",
-    "Payment verification",
-    "Supporter management",
-    "Payment history/dashboard",
-    "Responsive UI"
+    "Secure creator authentication & profiles",
+    "Razorpay payment gateway integration",
+    "One-click donation & support system",
+    "Payment verification & tracking",
+    "Supporter management dashboard",
+    "Payment history & analytics",
+    "Responsive modern UI"
   ]
 
   return (
-    <article id="project-hotel" className="py-20 border-b border-white/[0.08] relative">
+    <article id="project-get-me-a-chai" className="py-20 border-b border-white/[0.08] relative">
       <div className="flex items-center justify-between font-mono text-xs text-[#9da0a8] mb-8 pb-4 border-b border-white/[0.06] uppercase tracking-widest">
         <span className="flex items-center gap-2">
           <span className="text-[#e65c24]">PROJECT {project.number}</span>

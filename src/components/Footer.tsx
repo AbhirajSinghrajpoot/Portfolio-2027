@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
             Abhiraj Singh Rajpoot
           </div>
           <div className="text-[11px] text-[#5e6068]">
-            AI <span className="text-[#e65c24]">·</span> SOFTWARE <span className="text-[#e65c24]">·</span> CYBERSECURITY
+            AI <span className="text-[#e65c24]">·</span> SOFTWARE <span className="text-[#e65c24]">·</span> CYBERSECURITY <span className="text-[#e65c24]">·</span> BLOCKCHAIN
           </div>
         </div>
 

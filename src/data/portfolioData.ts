@@ -22,6 +22,7 @@ export interface ArchiveProject {
   month?: string
   technologies: string[]
   githubUrl?: string
+  liveUrl?: string
   description: string
   patternsOrFeatures?: string[]
 }
@@ -47,13 +48,13 @@ export const PERSONAL_INFO = {
   role: 'Full-Stack Developer | AI / Generative AI | Cybersecurity',
   positioning: 'Building practical digital products at the intersection of full-stack development, artificial intelligence and cybersecurity.',
   location: 'Jabalpur, Madhya Pradesh, India',
-  university: 'Baderia Global Institute of Engineering & Management',
+  university: 'Baderia Global Institute of Engineering & Management · RGPV',
   degree: 'B.Tech — IoT, Cybersecurity & Blockchain',
   graduationYear: '2027',
   cgpa: '7.18 / 10',
   currentYear: 'B.Tech Student',
   email: 'abhirajsingh2k5@gmail.com',
-  phone: '',
+  phone: '+91 6263 479 576',
   github: 'https://github.com/AbhirajSinghrajpoot',
   linkedin: 'https://linkedin.com/in/abhiraj-singh-rajpoot-7133a9349',
   leetcode: 'https://leetcode.com/u/abhirajsinghrajpoot',
@@ -114,69 +115,42 @@ export const FEATURED_PROJECTS: Project[] = [
     category: 'web',
   },
   {
-    id: 'cyberrakshak',
-    number: '04',
-    title: 'CYBERRAKSHAK',
-    subtitle: 'Scam Detector AI',
-    year: '2026',
-    technologies: ['React', 'TypeScript', 'Vite', 'Google Gemini API'],
-    summary: 'An AI-powered cybersecurity application that analyzes scam messages, phishing attempts, and suspicious links.',
-    highlights: [
-      'Analyzes phishing attempts and scam messages',
-      'Explains risk indicators in clear language',
-      'Provides actionable safety guidance and next steps'
-    ],
-    category: 'systems',
-  },
-  {
     id: 'intellithreat',
-    number: '05',
-    title: 'INTELLITHREAT (MALWARE DETECTION)',
-    subtitle: 'File Classification System',
+    number: '04',
+    title: 'INTELLITHREAT',
+    subtitle: 'Malware Detection · Academic Project',
     year: '2025',
     liveUrl: 'https://ai-based-malware-detector-o03w.onrender.com/',
-    technologies: ['Python', 'Machine Learning', 'Random Forest'],
-    summary: 'Academic cybersecurity project predicting malware versus safe files using dataset-based features.',
+    technologies: ['Python', 'Machine Learning', 'Random Forest', 'Flask'],
+    summary: 'An academic cybersecurity project that analyzes file-based dataset features and predicts whether a file is malware or safe, without executing actual malware.',
     highlights: [
       'Dataset-based file feature analysis',
-      'Random Forest classification modeling',
-      'Predicts Malware/Safe status without executing actual malware'
+      'Random Forest classification model',
+      'Predicts Malware / Safe classification',
+      'Flask-based web interface for results',
+      'No actual malware execution required'
     ],
     category: 'systems',
-  },
-  {
-    id: 'orbitbank',
-    number: '06',
-    title: 'ORBITBANK',
-    subtitle: 'Modern FinTech Landing Page',
-    year: '2025',
-    liveUrl: 'https://orbit-bank.vercel.app/',
-    technologies: ['React.js', 'Tailwind CSS', 'Vite', 'Google Apps Script'],
-    summary: 'A modern FinTech landing page featuring a responsive design and cryptocurrency ticker.',
-    highlights: [
-      'Responsive design and modern UI',
-      'Cryptocurrency ticker integration',
-      'Google Sheets integrated contact form'
-    ],
-    category: 'web',
   },
   {
     id: 'editkaro',
-    number: '07',
+    number: '05',
     title: 'EDITKARO AGENCY',
     subtitle: 'Video Editing Agency Portfolio',
     year: '2025',
     liveUrl: 'https://editing-agency-beryl.vercel.app/index.html',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    summary: 'Responsive video-editing agency website featuring a categorized portfolio and modern UI.',
+    summary: 'A responsive video editing agency website with categorized portfolio showcases, video previews, and a modern user-friendly interface.',
     highlights: [
       'Categorized video portfolio with previews',
-      'Modern UI with smooth interactions',
-      'Fully responsive cross-device design'
+      'Modern UI with smooth animations',
+      'Fully responsive cross-device design',
+      'Agency contact and service showcase'
     ],
     category: 'web',
   }
 ]
+
 
 export const ARCHIVE_PROJECTS: ArchiveProject[] = [
   { id: 'mysql-journey', title: 'MySQL Technical Log', subtitle: 'Backend / Database', year: '2024', technologies: ['MySQL', 'SQL', 'Relational Databases'], description: 'A 15-day technical log documenting my journey mastering MySQL, relational databases, and complex backend querying.' },
@@ -187,7 +161,12 @@ export const ARCHIVE_PROJECTS: ArchiveProject[] = [
   { id: 'flask-todo', title: 'Python Flask To-Do App', subtitle: 'Backend Application', year: '2025', technologies: ['Python', 'Flask', 'SQLite'], description: 'Server-rendered task management application with persistent local data storage.' },
   { id: 'port-scanner', title: 'Network Port Scanner', subtitle: 'Security Tool', year: '2025', technologies: ['Python', 'Tkinter', 'Socket', 'Threading'], description: 'GUI-based network reconnaissance tool for scanning ports and identifying open services.' },
   { id: 'saas-app', title: 'Full Stack SaaS Application', subtitle: 'Web Service', year: '2026', technologies: ['GitHub Repo Missing'], description: 'Full-stack application with authentication, payments and web-based functionality.' },
-  { id: 'dev-portfolio', title: 'Personal Developer Portfolio', subtitle: 'Web Portfolio', year: '2025', technologies: ['React', 'CSS'], description: 'Personal portfolio showcasing projects, skills and development work.' }
+  { id: 'dev-portfolio', title: 'Personal Developer Portfolio', subtitle: 'Web Portfolio', year: '2025', technologies: ['React', 'CSS'], description: 'Personal portfolio showcasing projects, skills and development work.' },
+  { id: 'intellithreat', title: 'IntelliThreat', subtitle: 'Malware Detection · Academic Project', year: '2025', liveUrl: 'https://ai-based-malware-detector-o03w.onrender.com/', technologies: ['Python', 'Machine Learning', 'Random Forest'], description: 'Academic cybersecurity project that analyzes file-based dataset features and predicts whether a file is malware or safe, without executing actual malware.' },
+  { id: 'orbitbank', title: 'OrbitBank', subtitle: 'FinTech Landing Page', year: '2025', liveUrl: 'https://orbit-bank.vercel.app/', technologies: ['React.js', 'Tailwind CSS', 'Vite', 'Google Apps Script'], description: 'Modern FinTech landing page featuring responsive design, a cryptocurrency ticker, pricing plans, testimonials, and a Google Sheets integrated contact form.' },
+  { id: 'editkaro', title: 'Editkaro Agency', subtitle: 'Video Editing Agency Portfolio', year: '2025', liveUrl: 'https://editing-agency-beryl.vercel.app/index.html', technologies: ['HTML', 'CSS', 'JavaScript'], description: 'Responsive video editing agency website with categorized portfolio showcases, video previews, and a modern user-friendly interface.' },
+  { id: 'wizards-portfolio', title: "Wizard's Portfolio", subtitle: 'Personal Portfolio v1', year: '2025', liveUrl: 'https://wizards-portfolio.vercel.app/', githubUrl: 'https://github.com/AbhirajSinghrajpoot/Wizards-Portfolio', technologies: ['HTML', 'CSS', 'JavaScript', 'Typed.js'], description: 'First personal developer portfolio showcasing projects, skills, and contact. Features animated typing effect, smooth scrolling, and a Google Sheets integrated contact form.' },
+  { id: 'cyberrakshak', title: 'CyberRakshak', subtitle: 'Scam Detector AI', year: '2026', technologies: ['React', 'TypeScript', 'Vite', 'Google Gemini API'], description: 'AI-powered cybersecurity application that analyzes scam messages, phishing attempts, and suspicious links using Google Gemini API for risk explanation and safety guidance.' }
 ]
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
@@ -214,7 +193,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     name: 'AI & MACHINE LEARNING',
     tagline: 'Intelligent integrations.',
-    skills: ['Google Gemini API', 'Generative AI', 'Prompt Engineering'],
+    skills: ['Generative AI', 'Google Gemini API', 'Machine Learning Fundamentals', 'Prompt Engineering', 'AI API Integration'],
   },
   {
     name: 'CYBERSECURITY',
